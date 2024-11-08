@@ -15,7 +15,7 @@ dotenv.config();
 
 // Middleware para CORS
 app.use(cors({
-    origin: 'https://chat-mern-iota.vercel.app/', // 
+    origin: 'https://chat-mern-iota.vercel.app', // 
     credentials: true  // Permite cookies y otros headers de autenticación
 }));
 
