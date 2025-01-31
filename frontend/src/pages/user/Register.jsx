@@ -36,7 +36,7 @@ const Register = () => {
             return toast.error('Confirmacion de contraseña incorrecta')
         }
         try {
-           const register = await axios.post('/api/auth/register', inputData);
+           const register = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/auth/register`, inputData);
            const data = register.data;
            if(data.success === false){
             setLoading(false)
